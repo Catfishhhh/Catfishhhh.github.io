@@ -2,15 +2,16 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #f4f4f4;
   color: #333;
 }
 
 header {
-  background-color: #4CAF50;
+  background-color: #2ecc71;
   color: #fff;
   text-align: center;
   padding: 1em 0;
+  border-bottom: 5px solid #27ae60;
 }
 
 nav {
@@ -31,6 +32,11 @@ nav a {
   color: #fff;
   padding: 0.5em 1em;
   display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;
 }
 
 main {
@@ -47,6 +53,8 @@ article {
 
 article h2 {
   color: #333;
+  border-bottom: 2px solid #2ecc71;
+  padding-bottom: 5px;
 }
 
 .post-meta {
@@ -55,11 +63,18 @@ article h2 {
 }
 
 .read-more {
-  display: block;
-  text-align: right;
-  color: #4CAF50;
+  display: inline-block;
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 0.3em 1em;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #27ae60;
 }
 
 footer {
